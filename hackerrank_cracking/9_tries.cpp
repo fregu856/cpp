@@ -34,6 +34,15 @@ int main()
       string op;
       string contact;
       cin >> op >> contact;
+
+      if (op == "add")
+      {
+
+      }
+      else
+      {
+          
+      }
   }
 
   return 0;
