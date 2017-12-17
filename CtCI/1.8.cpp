@@ -31,7 +31,14 @@ bool isSubstring(std::string str, std::string sub_str)
 
 bool isRotation(std::string str, std::string rot_str)
 {
-   // TODO!
+    if (str.length() != rot_str.length())
+    {
+        return false;
+    }
+    else
+    {
+        return (isSubstring(str+str, rot_str));
+    }
 }
 
 int main()
