@@ -23,10 +23,9 @@ bool isPermutation(std::string first, std::string second)
         }
     }
 
-    for (int i =0; i < second.length(); ++i)
+    for (int i = 0; i < second.length(); ++i)
     {
         current_letter = second[i];
-
         if (letter_freq.find(current_letter) == letter_freq.end())
         {
             return false;

@@ -9,7 +9,7 @@ class Graph
 public:
     Graph();
 
-    void addEdge(int from, int to); // (still an uncirected graph though)
+    void addEdge(int from, int to); // (still an undirected graph though)
 
     void DFS(int node);
 

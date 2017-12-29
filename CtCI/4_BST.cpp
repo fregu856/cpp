@@ -101,7 +101,7 @@ void BST::insert(int value, TreeNode *&node) // (pass reference to pointer, othe
     }
     else
     {
-        if (value < node->data)
+        if (value <= node->data)
         {
             insert(value, node->left);
         }

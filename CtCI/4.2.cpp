@@ -65,6 +65,7 @@ bool DiGraph::BFS(int from, int to)
 
     visited[from] = true;
     queue.push(from);
+    
     while (!queue.empty())
     {
         // dequeue:
