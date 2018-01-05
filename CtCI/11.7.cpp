@@ -48,10 +48,9 @@ void findLongestIncreasing(std::vector< std::pair<int, int> > &vec, std::vector<
     }
 }
 
-// (returns true if pair1 should go before pair2)
 bool customComparator(std::pair<int, int> pair1, std::pair<int, int> pair2)
 {
-    return (pair1.first < pair2.first);
+    return (pair1.first < pair2.first); // (returns true if pair1 should go before pair2)
 }
 
 std::vector< std::pair<int, int> > computeTallestTower(std::vector< std::pair<int, int> > &vec)
