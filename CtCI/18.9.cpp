@@ -27,7 +27,8 @@ float getMedian(std::priority_queue<int> &max_heap, std::priority_queue<int, std
 
         min_heap.push(value);
 
-        return max_heap.top();
+        float median = (min_heap.top() + max_heap.top())/2.0;
+        return median;
     }
     else if (min_heap_size == 2+max_heap_size)
     {
@@ -36,7 +37,8 @@ float getMedian(std::priority_queue<int> &max_heap, std::priority_queue<int, std
 
         max_heap.push(value);
 
-        return min_heap.top();
+        float median = (min_heap.top() + max_heap.top())/2.0;
+        return median;
     }
     else
     {
